@@ -85,7 +85,8 @@ async function CreateUniswapPair(lhsToken, rhsToken) {
         fstToken.address,
         sndToken.address
     );
-    console.log("UniswapV2Pair info: %s", uniswapPairContract);
+    // actualy, interesting info, but trashes console.
+    // console.log("UniswapV2Pair info: %s", uniswapPairContract);
 
     // Get just created Pair address.
     const uniswapPairAddress = await uniswapFactory.getPair(fstToken.address, sndToken.address);
@@ -204,7 +205,10 @@ describe("Uniswap test", function () {
         // Transfer all liquidity tokens to contract address for keeping fee
         // & burn pair for returning deposits.
         await uniswapPair.transfer(uniswapPair.address, await uniswapPair.balanceOf(owner.address))
+        console.log("Saved fee from swapping into Pair totalSupply")
         await uniswapPair.burn(owner.address);
+        console.log("Pair tokens were burned\n")
+
         console.log("Owner liquidity after burning: %s", await uniswapPair.balanceOf(owner.address));
         expect(await uniswapPair.balanceOf(owner.address)).to.equal(
             0,
