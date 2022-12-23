@@ -202,10 +202,10 @@ describe("Uniswap test", function () {
             "Owners EGR Tokens must be increase on 5 EGR after swap"
         )
 
-        // Transfer all liquidity tokens to contract address for keeping fee
+        // Transfer all owner's liquidity tokens back to contract address
         // & burn pair for returning deposits.
         await uniswapPair.transfer(uniswapPair.address, await uniswapPair.balanceOf(owner.address))
-        console.log("Saved fee from swapping into Pair totalSupply")
+        console.log("Take back owner's liquidity tokens")
         await uniswapPair.burn(owner.address);
         console.log("Pair tokens were burned\n")
 
