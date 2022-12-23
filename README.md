@@ -42,7 +42,7 @@ Transferred 10 EGR from Owner to Pair
 Mint Pair 2 ERV and 10 EGR tokens.
 Transferred 4 ERV from Owner to Pair
 Swapped 1 ERV to 5 EGR on Owner address
-Saved fee from swapping into Pair totalSupply
+Take back owner's liquidity tokens
 Pair tokens were burned
 
 Owner liquidity after burning: 0
