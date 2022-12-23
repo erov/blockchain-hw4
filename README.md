@@ -17,6 +17,8 @@ npx hardhat test
 ```
 
 ## Sample of usage
+> Upd from ending of December 2022: I guess it can be more representative sample in case I used two different accounts for testing swap. Cause now it looks like in real life you wonna lend token yourself. But test-cases are handling it well, esspecially, if you double-check it with pen & paper, drawing transactions :)
+
 ```
 $ npx hardhat test
 
