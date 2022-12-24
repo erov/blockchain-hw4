@@ -12,7 +12,6 @@ npx install @uniswap/v2-core
 ## Usage
 ```
 export ALCHEMY_TOKEN=<YOUR ALCHEMY TOKEN>
-export LATEST_BLOCK=<BLOCK FOR MAINNET FORK>
 npx hardhat test
 ```
 
