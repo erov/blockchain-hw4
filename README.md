@@ -6,7 +6,7 @@ Exchanges two tokens via swap-pair. For example I take my own custom tokens ERV 
 ## Preparing
 ```
 npm install --save-dev hardhat
-npx install @uniswap/v2-core
+npm install @uniswap/v2-core
 ```
 
 ## Usage
